@@ -47,7 +47,7 @@ public class CourseController {
     @GetMapping("/getlessons/{id}")
     public List<Lesson> getLessonsByCourceId(@PathVariable Long id) {
 
-        return lessonService.getLessonById(id);
+        return courseService.getLessonById(id);
     }
 
 //    @PostMapping("/addlessons")

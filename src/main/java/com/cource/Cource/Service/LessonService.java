@@ -20,11 +20,6 @@ public class LessonService {
         return lessonRepository.findAll();
     }
 
-    public
-    List<Lesson> getLessonById(Long id) {
-        return lessonRepository.findByCourseId(id);
-    }
-
     public Lesson addLesson(Lesson lesson) {
         return lessonRepository.save(lesson);
     }

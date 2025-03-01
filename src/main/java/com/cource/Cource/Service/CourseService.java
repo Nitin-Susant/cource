@@ -2,6 +2,7 @@ package com.cource.Cource.Service;
 
 
 import com.cource.Cource.Entitys.Course;
+import com.cource.Cource.Entitys.Lesson;
 import com.cource.Cource.Repository.CourseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,6 +21,10 @@ public class CourseService {
 
     public Course getCourseById(Long id) {
         return courseRepository.findById(id).orElse(null);
+    }
+
+    public List<Lesson> getLessonById(Long id) {
+        return courseRepository.findByCourseId(id);
     }
 
     public Course addCourse(Course course) {
