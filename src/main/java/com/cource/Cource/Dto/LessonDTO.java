@@ -1,4 +1,4 @@
-package com.cource.Cource.Controllers;
+package com.cource.Cource.Dto;
 
 public class LessonDTO {
 

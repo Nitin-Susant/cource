@@ -1,4 +1,4 @@
-package com.cource.Cource;
+package com.cource.Cource.Dto;
 
 import com.cource.Cource.Entitys.Lesson;
 
